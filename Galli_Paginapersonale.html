@@ -1,0 +1,250 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <!-- Bootstrap CSS -->
+    <style>
+    #loader {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 1;
+  width: 150px;
+  height: 150px;
+  margin: -75px 0 0 -75px;
+  border: 16px solid #f3f3f3;
+  border-radius: 50%;
+  border-top: 16px solid #f65c59;
+  width: 120px;
+  height: 120px;
+  -webkit-animation: spin 2s linear infinite;
+  animation: spin 2s linear infinite;
+}
+
+@-webkit-keyframes spin {
+  0% { -webkit-transform: rotate(0deg); }
+  100% { -webkit-transform: rotate(360deg); }
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Add animation to "page content" */
+.animate-bottom {
+  position: relative;
+  -webkit-animation-name: animatebottom;
+  -webkit-animation-duration: 1s;
+  animation-name: animatebottom;
+  animation-duration: 1s
+}
+
+@-webkit-keyframes animatebottom {
+  from { bottom:-100px; opacity:0 }
+  to { bottom:0px; opacity:1 }
+}
+
+@keyframes animatebottom {
+  from{ bottom:-100px; opacity:0 }
+  to{ bottom:0; opacity:1 }
+}
+
+#myDiv {
+  display: none;
+  text-align: center;
+}
+
+    h2 {
+      text-align: center;
+      font-weight: 700;
+    }
+
+    .navbar {
+      background-color: #fc5a5b;
+    }
+
+    .sfondoalto {
+      background: url('unmondocontroluce.png') no-repeat;
+      background-size:contain;
+    }
+
+    .carousel-item {
+      height: 65vh;
+      min-height: 300px;
+      background: no-repeat center center scroll;
+      -webkit-background-size: cover;
+      -moz-background-size: cover;
+      -o-background-size: cover;
+      background-size: cover;
+    }
+
+    .titoliblocchi {
+      color: black;
+      font-weight: bold;
+    }
+
+    </style>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/css/bootstrap.min.css" integrity="sha384-9gVQ4dYFwwWSjIDZnLEWnxCjeSWFphJiwGPXr1jddIhOegiu1FwO5qRGvFXOdJZ4" crossorigin="anonymous">
+
+    <title>indexbootstrap</title>
+  </head>
+
+    <body onload="myFunction()" style="margin:0;">
+    <div id="loader"> </div>
+
+    <div style="display:none;" id="myDiv" class="animate-bottom">
+    <h1>Pagina personale</h1>
+
+<nav class="navbar fixed-top navbar-expand-lg navbar-dark fixed-top">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">Rocco Galli</a>
+    <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarResponsive">
+      <ul class="navbar-nav ml-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About me</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="contact.html">Contact</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownPortfolio" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Categories
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownPortfolio">
+            <a class="dropdown-item" href="portfolio-1-col.html">Artworks</a>
+            <a class="dropdown-item" href="portfolio-2-col.html">Progetti</a>
+            <a class="dropdown-item" href="portfolio-3-col.html">Fotografia</a>
+            <a class="dropdown-item" href="portfolio-4-col.html">Videomaking</a>
+          </div>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownBlog" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+            Blog
+          </a>
+          <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdownBlog">
+            <a class="dropdown-item" href="https://500px.com/roccogalli">500px</a>
+            <a class="dropdown-item" href="http://seizeyourmoments.tumblr.com/">Tumblr</a>
+          </div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
+
+<!-- Header - set the background image for the header in the line below -->
+<header class="py-5 bg-image-full sfondoalto">
+  <img class="img-fluid d-block mx-auto" src="Magliettabiancaretro.png" alt="" style="Width: 300px; height: 300px; ">
+</header>
+
+<!-- Portfolio Section -->
+<h2 style="transform: translate(0, -10me)">Progetti</h2>
+
+<div class="row">
+  <div class="col-lg-4 col-sm-6 portfolio-item">
+    <div class="card h-100" style="background-color: #f7f7f7;">
+      <a href="#"><img class="card-img-top" src="cometiraccontolacircolarecover.png" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#" class="titoliblocchi">Come ti racconto la circolare</a>
+        </h4>
+        <p class="card-text"> 90 e 91, circolare destra e circolare sinistra, sono forse i mezzi pubblici milanesi più controversi e discussi. "Come ti racconto la circolare" è un progetto fotografico che lascia un punto di vista esterno, di chi guarda dalla fermata. </p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 portfolio-item">
+    <div class="card h-100 sfondoblocchi" style="background-color: #f7f7f7;">
+      <a href="#"><img class="card-img-top" src="Ventimigliacover.png" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#" class="titoliblocchi">Ventimiglia</a>
+        </h4>
+        <p class="card-text">In una città di confine, al centro dell'attenzione per il flusso migratorio verso la Francia, il punto di vista dei ragazzi in viaggio</p>
+      </div>
+    </div>
+  </div>
+  <div class="col-lg-4 col-sm-6 portfolio-item">
+    <div class="card h-100 sfondoblocchi" style="background-color: #f7f7f7;">
+      <a href="#"><img class="card-img-top" src="luciurbanecover.png" alt=""></a>
+      <div class="card-body">
+        <h4 class="card-title">
+          <a href="#" class="titoliblocchi">Luci Urbane</a>
+        </h4>
+        <p class="card-text"> Il fascino delle città di notte, come cambiano, le storie che raccontano.</p>
+      </div>
+    </div>
+  </div>
+</div>
+<!-- /.row -->
+
+<!-- slideshow -->
+<header style="transform: translate(0, 20px)">
+  <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+      <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+    </ol>
+    <div class="carousel-inner" role="listbox">
+      <!-- Slide One - Set the background image for this slide in the line below -->
+      <div class="carousel-item active" style="background-image: url('Vienna_passeggio.png')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Vienna</h3>
+          <p></p>
+        </div>
+      </div>
+      <!-- Slide Two - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('nottedifiabaponale.png')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Riva del Garda</h3>
+          <p>Notte di Fiabia</p>
+        </div>
+      </div>
+      <!-- Slide Three - Set the background image for this slide in the line below -->
+      <div class="carousel-item" style="background-image: url('liveclavergold.png')">
+        <div class="carousel-caption d-none d-md-block">
+          <h3>Claver Gold</h3>
+          <p>Live in Arena (MI)</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</header>
+</div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script>
+    var myVar;
+
+    function myFunction() {
+    myVar = setTimeout(showPage, 2000);
+}
+
+function showPage() {
+  document.getElementById("loader").style.display = "none";
+  document.getElementById("myDiv").style.display = "block";
+}
+
+    $('.carousel').carousel({
+    interval: 10
+    })
+    </script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.0/umd/ppper.min.js" integrity="sha384-cs/chFZiN24E4KMATLdqdvsezGxaGsi4hLGOzlXwp5UZB1LY//20VyM2taTB4QvJ" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.0/js/bootstrap.min.js" integrity="sha384-uefMccjFJAIv6A+rW+L4AHf99KvxDjWSu1z9VI8SKNVmz4sk7buKt/6v9KI65qnm" crossorigin="anonymous"></script>
+
+</body>
+<style>
+
+</style>
+</html>
